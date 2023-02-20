@@ -2,6 +2,7 @@
   "name": "front-end-audit-tool",
   "packageManager": "yarn@3.2.4",
   "dependencies": {
+    "@projectwallace/css-analyzer": "^5.8.0",
     "@ronilaukkarinen/stylelint-a11y": "^1.2.7",
     "eslint-config-airbnb": "^19.0.4",
     "eslint-plugin-jsx-a11y": "^6.7.1",
@@ -17,12 +18,10 @@
     "stylelint-scss": "^4.4.0"
   },
   "scripts": {
-    "test-js": "jest",
-    "scsslint": "stylelint -f verbose --config './config/stylelint/config.json' -i './config/stylelint/ignore'",
-    "scsslint1": "stylelint -f verbose --config './config/stylelint/config.json' -i '.stylelintignore'",
-    "scsslint2": "stylelint -f verbose --config './config/stylelint/config.json'",
+    "scsslint": "stylelint -f verbose --config './config/stylelint/config.json'",
     "scsslintfix": "yarn scsslint --fix",
-    "eslint": "eslint -c './.eslintrc'"
+    "eslint": "eslint -c './.eslintrc'",
+    "eslintfix": "eslint -c './.eslintrc' --fix"
   },
   "devDependencies": {
     "eslint": "^7.32.0 || ^8.2.0",

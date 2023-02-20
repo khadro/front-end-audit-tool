@@ -28,6 +28,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         [null, {\
           "packageLocation": "./",\
           "packageDependencies": [\
+            ["@projectwallace/css-analyzer", "npm:5.8.0"],\
             ["@ronilaukkarinen/stylelint-a11y", "virtual:3ff02549ce89aee5052022f4b095e0ea98403a9826670688d8e4e7c601c7331b0fa0bd279c73bb7ec19e6a983e17d35c0442e6bc5089a475d37c9f7c336366fc#npm:1.2.7"],\
             ["eslint", "npm:8.34.0"],\
             ["eslint-config-airbnb", "virtual:3ff02549ce89aee5052022f4b095e0ea98403a9826670688d8e4e7c601c7331b0fa0bd279c73bb7ec19e6a983e17d35c0442e6bc5089a475d37c9f7c336366fc#npm:19.0.4"],\
@@ -840,6 +841,16 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "linkType": "HARD"\
         }]\
       ]],\
+      ["@bramus/specificity", [\
+        ["npm:2.2.0", {\
+          "packageLocation": "./.yarn/cache/@bramus-specificity-npm-2.2.0-8b992bee31-6d5b4fd7a4.zip/node_modules/@bramus/specificity/",\
+          "packageDependencies": [\
+            ["@bramus/specificity", "npm:2.2.0"],\
+            ["css-tree", "npm:2.3.1"]\
+          ],\
+          "linkType": "HARD"\
+        }]\
+      ]],\
       ["@csstools/css-parser-algorithms", [\
         ["npm:2.0.1", {\
           "packageLocation": "./.yarn/cache/@csstools-css-parser-algorithms-npm-2.0.1-d93fd57f45-9f168cfc8f.zip/node_modules/@csstools/css-parser-algorithms/",\
@@ -1371,6 +1382,17 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@npmcli/move-file", "npm:2.0.1"],\
             ["mkdirp", "npm:1.0.4"],\
             ["rimraf", "npm:3.0.2"]\
+          ],\
+          "linkType": "HARD"\
+        }]\
+      ]],\
+      ["@projectwallace/css-analyzer", [\
+        ["npm:5.8.0", {\
+          "packageLocation": "./.yarn/cache/@projectwallace-css-analyzer-npm-5.8.0-b9029d642e-3833fc6964.zip/node_modules/@projectwallace/css-analyzer/",\
+          "packageDependencies": [\
+            ["@projectwallace/css-analyzer", "npm:5.8.0"],\
+            ["@bramus/specificity", "npm:2.2.0"],\
+            ["css-tree", "npm:2.3.1"]\
           ],\
           "linkType": "HARD"\
         }]\
@@ -3454,6 +3476,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./",\
           "packageDependencies": [\
             ["front-end-audit-tool", "workspace:."],\
+            ["@projectwallace/css-analyzer", "npm:5.8.0"],\
             ["@ronilaukkarinen/stylelint-a11y", "virtual:3ff02549ce89aee5052022f4b095e0ea98403a9826670688d8e4e7c601c7331b0fa0bd279c73bb7ec19e6a983e17d35c0442e6bc5089a475d37c9f7c336366fc#npm:1.2.7"],\
             ["eslint", "npm:8.34.0"],\
             ["eslint-config-airbnb", "virtual:3ff02549ce89aee5052022f4b095e0ea98403a9826670688d8e4e7c601c7331b0fa0bd279c73bb7ec19e6a983e17d35c0442e6bc5089a475d37c9f7c336366fc#npm:19.0.4"],\

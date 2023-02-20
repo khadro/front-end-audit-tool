@@ -418,6 +418,17 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@bramus/specificity@npm:^2.2.0":
+  version: 2.2.0
+  resolution: "@bramus/specificity@npm:2.2.0"
+  dependencies:
+    css-tree: ^2.3.1
+  bin:
+    specificity: bin/cli.js
+  checksum: 6d5b4fd7a46ac16ba7e179b60de5e2c460550b18b796921d052f40d67fa53ae8a4f30af039ea9da5b78b1a9560d9cfe433f6b5ee865ec70c3b6d932198cab5d1
+  languageName: node
+  linkType: hard
+
 "@csstools/css-parser-algorithms@npm:^2.0.1":
   version: 2.0.1
   resolution: "@csstools/css-parser-algorithms@npm:2.0.1"
@@ -849,6 +860,16 @@ __metadata:
     mkdirp: ^1.0.4
     rimraf: ^3.0.2
   checksum: 52dc02259d98da517fae4cb3a0a3850227bdae4939dda1980b788a7670636ca2b4a01b58df03dd5f65c1e3cb70c50fa8ce5762b582b3f499ec30ee5ce1fd9380
+  languageName: node
+  linkType: hard
+
+"@projectwallace/css-analyzer@npm:^5.8.0":
+  version: 5.8.0
+  resolution: "@projectwallace/css-analyzer@npm:5.8.0"
+  dependencies:
+    "@bramus/specificity": ^2.2.0
+    css-tree: ^2.3.1
+  checksum: 3833fc69644618c2fdca501ff3014b83006d277f1116bf127a42108b9f23a56e485dadf218ee24752d26b695595710326c3a44f4f39e78d8f826b19dcb624937
   languageName: node
   linkType: hard
 
@@ -2509,6 +2530,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "front-end-audit-tool@workspace:."
   dependencies:
+    "@projectwallace/css-analyzer": ^5.8.0
     "@ronilaukkarinen/stylelint-a11y": ^1.2.7
     eslint: ^7.32.0 || ^8.2.0
     eslint-config-airbnb: ^19.0.4
