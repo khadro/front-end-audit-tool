@@ -1,6 +1,6 @@
 To test the JS and SCSS on a website use the following commands in a bash or bash-like shell (wsl for windows is the easiest):
 
-#JavaScript
+### JavaScript
 
 `yarn eslint [path to the js file to test]`
 
@@ -10,7 +10,7 @@ To try and fix as many issues with the JS as possible you can run
 
 `yarn eslintfix "[path to the scss folder to test]"`
 
-#SCSS
+### SCSS
 
 `yarn scsslint "[path to the scss folder to test]"`
 
@@ -20,8 +20,7 @@ To try and fix as many issues with the SCSS as possible you can run
 
 `yarn scsslintfix "[path to the scss folder to test]"`
 
-Important: It is suggested that you do this for the first time in a new branch, in case something goes wrong. It's much easier to return to a branch than it is to try and undo thousands of file changes.
-
+__Important:__ It is suggested that you do this for the first time in a new branch, in case something goes wrong. It's much easier to return to a branch than it is to try and undo thousands of file changes.
 
 
 *Notes*
