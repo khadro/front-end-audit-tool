@@ -1,0 +1,92 @@
+{
+  "extends": "stylelint-config-sass-guidelines",
+  "defaultSeverity": "error",
+  "plugins": [
+    "stylelint-scss"
+  ],
+  "cache": true,
+  "rules": {
+    "no-empty-source": null,
+    "string-quotes": "double",
+    "no-descending-specificity": null,
+    "declaration-empty-line-before": null,
+    "font-family-no-missing-generic-family-keyword" : true,
+    "function-calc-no-invalid": true,
+    "function-calc-no-unspaced-operator": true,
+    "function-linear-gradient-no-nonstandard-direction": true,
+    "unit-no-unknown": true,
+    "font-weight-notation": "numeric",
+    "number-leading-zero": "never",
+    "block-opening-brace-newline-after": "always",
+    "block-opening-brace-space-before": "always",
+    "block-closing-brace-empty-line-before": "never",
+    "block-closing-brace-newline-after": "always",
+    "block-closing-brace-newline-before": "always",
+    "selector-attribute-brackets-space-inside": "never",
+    "selector-attribute-operator-space-after": "never",
+    "selector-attribute-operator-space-before": "never",
+    "declaration-property-value-no-unknown": true,
+    "selector-max-id": 1,
+    "scss/no-global-function-names": true,
+    "max-empty-lines": 1,
+    "max-nesting-depth": [
+      5,
+      {
+        "ignore": "pseudo-classes",
+        "ignoreAtRules": "[\"media\", \"include\", \"extend\"]"
+      }
+    ],
+    "selector-max-compound-selectors": 4,
+    "selector-class-pattern": [
+      "^[\\w-_]+$",
+      {
+        "resolveNestedSelectors": true
+      }
+    ],
+    "selector-no-qualifying-type": [
+      true,
+      {
+        "ignore": [
+          "class"
+        ]
+      }
+    ],
+
+    "declaration-block-no-duplicate-properties": [
+      true,
+      {
+        "ignore": [
+          "consecutive-duplicates"
+        ]
+      }
+    ],
+    "at-rule-no-unknown": [
+      true,
+      {
+        "ignoreAtRules": [
+          "extend",
+          "at-root",
+          "debug",
+          "warn",
+          "error",
+          "if",
+          "else",
+          "for",
+          "each",
+          "while",
+          "mixin",
+          "include",
+          "content",
+          "return",
+          "function",
+          "tailwind",
+          "apply",
+          "responsive",
+          "variants",
+          "screen",
+          "use"
+        ]
+      }
+    ]
+  }
+}

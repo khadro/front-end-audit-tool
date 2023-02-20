@@ -1,0 +1,32 @@
+{
+  "name": "front-end-audit-tool",
+  "packageManager": "yarn@3.2.4",
+  "dependencies": {
+    "@ronilaukkarinen/stylelint-a11y": "^1.2.7",
+    "eslint-config-airbnb": "^19.0.4",
+    "eslint-plugin-jsx-a11y": "^6.7.1",
+    "eslint-plugin-react": "^7.32.2",
+    "eslint-plugin-react-hooks": "^4.6.0",
+    "jest": "^29.4.3",
+    "postcss": "^8.4.21",
+    "postcss-scss": "^4.0.6",
+    "stylelint": "^15.1.0",
+    "stylelint-config-sass-guidelines": "^9.0.1",
+    "stylelint-config-standard": "^30.0.1",
+    "stylelint-order": "^6.0.2",
+    "stylelint-scss": "^4.4.0"
+  },
+  "scripts": {
+    "test-js": "jest",
+    "scsslint": "stylelint -f verbose --config './config/stylelint/config.json' -i './config/stylelint/ignore'",
+    "scsslint1": "stylelint -f verbose --config './config/stylelint/config.json' -i '.stylelintignore'",
+    "scsslint2": "stylelint -f verbose --config './config/stylelint/config.json'",
+    "scsslintfix": "yarn scsslint --fix",
+    "eslint": "eslint -c './.eslintrc'"
+  },
+  "devDependencies": {
+    "eslint": "^7.32.0 || ^8.2.0",
+    "eslint-config-airbnb-base": "latest",
+    "eslint-plugin-import": "^2.25.2"
+  }
+}
